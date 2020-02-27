@@ -24,7 +24,7 @@ app.use(cors());
 app.use(express.static('dist/basicapp'));
 
 app.get('/',(req,res)=>{
-res.sendFile('dist/basicapp');
+res.sendFile('dist/web');
 })
 
 // set the static files location /public/img will be /img for users
