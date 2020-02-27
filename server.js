@@ -21,7 +21,7 @@ mongoose.connect(database.remoteUrl,(err)=>{
 //********to view builded data  
 
 app.use(cors());
-app.use(express.static('dist/basicapp'));
+app.use(express.static('dist/web'));
 
 app.get('/',(req,res)=>{
 res.sendFile('dist/web');
